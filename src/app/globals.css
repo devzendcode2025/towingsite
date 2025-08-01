@@ -1,0 +1,12 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 1280px; /* Equivalent to max-w-screen-xl */
+}

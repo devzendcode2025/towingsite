@@ -1,0 +1,27 @@
+---
+company_name: "BYD Towing LLC."
+copyright_year: "2025"
+address: "Dallas Texas"
+phone_number: "(214) 625-5394"
+email_address: "bydtowing@gmail.com"
+links:
+  - text: "Home"
+    href: "/"
+  - text: "About Us"
+    href: "#about"
+  - text: "Services"
+    href: "#services"
+  - text: "Contact Us"
+    href: "#contact"
+  - text: "Gallery"
+    href: "#gallery"
+services_links:
+  - text: "Towing"
+    href: "#"
+  - text: "Locks"
+    href: "#"
+  - text: "Vehicles"
+    href: "#"
+  - text: "Wrecker Hauling"
+    href: "#"
+---
