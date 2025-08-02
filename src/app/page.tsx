@@ -5,7 +5,6 @@ import Gallery from '@/components/Gallery';
 import WhyChooseUs from '@/components/WhyChooseUs';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
-import CarouselSection from '@/components/CarouselSection'; // Import CarouselSection
 import { getMarkdownContent } from '@/lib/markdown';
 
 export default async function Home() {
@@ -19,7 +18,6 @@ export default async function Home() {
 
   return (
     <main>
-      <CarouselSection /> {/* Add CarouselSection here */}
       <Hero
         title={heroContent.title || ''}
         subtitle={heroContent.subtitle || ''}
