@@ -1,0 +1,106 @@
+
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: "public/images"
+public_folder: "/images"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "content/hero.md"
+        label: "Hero Section"
+        name: "hero"
+        fields:
+          - { label: "Slides", name: "slides", widget: "list", fields: [
+              { label: "Title", name: "title", widget: "string" },
+              { label: "Subtitle", name: "subtitle", widget: "string" },
+              { label: "Button Text", name: "button_text", widget: "string" },
+              { label: "Button Link", name: "button_link", widget: "string" },
+              { label: "Image", name: "image", widget: "image" }
+            ]}
+
+      - file: "content/about.md"
+        label: "About Us"
+        name: "about"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Content", name: "body", widget: "markdown" }
+          - { label: "Phone Number", name: "phone_number", widget: "string" }
+          - { label: "Features", name: "features", widget: "list", field: { label: "Feature", name: "item", widget: "string" } }
+
+      - file: "content/services.md"
+        label: "Services"
+        name: "services"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - label: "Services List"
+            name: "services"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+
+      - file: "content/gallery.md"
+        label: "Gallery"
+        name: "gallery"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Images", name: "images", widget: "list", field: { label: "Image", name: "image", widget: "image" } }
+
+      - file: "content/why-choose-us.md"
+        label: "Why Choose Us"
+        name: "why-choose-us"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - label: "Points"
+            name: "points"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+
+      - file: "content/contact.md"
+        label: "Contact"
+        name: "contact"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Phone Number", name: "phone_number", widget: "string" }
+          - { label: "Availability", name: "availability", widget: "string" }
+          - { label: "Email Address", name: "email_address", widget: "string" }
+          - { label: "Location", name: "location", widget: "string" }
+
+      - file: "content/footer.md"
+        label: "Footer"
+        name: "footer"
+        fields:
+          - { label: "Company Name", name: "company_name", widget: "string" }
+          - { label: "Slogan", name: "slogan", widget: "string" }
+          - { label: "Copyright Year", name: "copyright_year", widget: "string" }
+          - { label: "Address", name: "address", widget: "string" }
+          - { label: "Phone Number", name: "phone_number", widget: "string" }
+          - { label: "Email Address", name: "email_address", widget: "string" }
+          - label: "Quick Links"
+            name: "links"
+            widget: "list"
+            fields:
+              - { label: "Text", name: "text", widget: "string" }
+              - { label: "URL", name: "href", widget: "string" }
+          - label: "Services Links"
+            name: "services_links"
+            widget: "list"
+            fields:
+              - { label: "Text", name: "text", widget: "string" }
+              - { label: "URL", name: "href", widget: "string" }
+          - label: "Social Media Links"
+            name: "social_links"
+            widget: "list"
+            fields:
+              - { label: "Icon", name: "icon", widget: "select", options: ["facebook", "twitter", "instagram"] }
+              - { label: "URL", name: "href", widget: "string" }
