@@ -20,7 +20,7 @@ export default function Services({ title, subtitle, services }: ServicesProps) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.5 }}
-      className="py-5 bg-white"
+      className="py-5 bg-white section-padding"
     >
       <div className="container">
         <h2 className="text-center mb-3">{title}</h2>

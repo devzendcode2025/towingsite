@@ -7,7 +7,7 @@ export default function Header() {
       <div className="container d-flex justify-content-between align-items-center">
         <div>
           <Link href="/">
-            <Image src="/logo.png" alt="BYD Towing LLC Logo" width={150} height={50} priority />
+            <Image src="/images/logo.png" alt="BYD Towing LLC Logo" width={150} height={50} priority />
           </Link>
         </div>
         <nav>

@@ -1,27 +1,35 @@
 ---
-company_name: "BYD Towing LLC."
-copyright_year: "2025"
-address: "Dallas Texas"
-phone_number: "(214) 625-5394"
-email_address: "bydtowing@gmail.com"
+company_name: 'BYD Towing LLC'
+slogan: 'Your reliable partner on the road, providing fast and professional towing and roadside assistance services whenever you need them.'
+copyright_year: '2025'
+address: 'Dallas, Texas'
+phone_number: '(214) 625-5394'
+email_address: 'bydtowing@gmail.com'
 links:
-  - text: "Home"
-    href: "/"
-  - text: "About Us"
-    href: "#about"
-  - text: "Services"
-    href: "#services"
-  - text: "Contact Us"
-    href: "#contact"
-  - text: "Gallery"
-    href: "#gallery"
+  - text: 'Home'
+    href: '/'
+  - text: 'About Us'
+    href: '#about'
+  - text: 'Services'
+    href: '#services'
+  - text: 'Contact Us'
+    href: '#contact'
+  - text: 'Gallery'
+    href: '#gallery'
 services_links:
-  - text: "Towing"
-    href: "#"
-  - text: "Locks"
-    href: "#"
-  - text: "Vehicles"
-    href: "#"
-  - text: "Wrecker Hauling"
-    href: "#"
+  - text: 'Light Duty Towing'
+    href: '#services'
+  - text: 'Roadside Assistance'
+    href: '#services'
+  - text: 'Jumpstarts'
+    href: '#services'
+  - text: 'Lockouts'
+    href: '#services'
+social_links:
+  - icon: 'facebook'
+    href: '#'
+  - icon: 'twitter'
+    href: '#'
+  - icon: 'instagram'
+    href: '#'
 ---

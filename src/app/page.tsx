@@ -18,12 +18,7 @@ export default async function Home() {
 
   return (
     <main>
-      <Hero
-        title={heroContent.title || ''}
-        subtitle={heroContent.subtitle || ''}
-        button_text={heroContent.button_text || ''}
-        button_link={heroContent.button_link || ''}
-      />
+      <Hero slides={heroContent.slides || []} />
       <About
         title={aboutContent.title || ''}
         subtitle={aboutContent.subtitle || ''}
@@ -54,12 +49,14 @@ export default async function Home() {
       />
       <Footer
         company_name={footerContent.company_name || ''}
+        slogan={footerContent.slogan || ''} 
         copyright_year={footerContent.copyright_year || ''}
         address={footerContent.address || ''}
         phone_number={footerContent.phone_number || ''}
         email_address={footerContent.email_address || ''}
         links={footerContent.links || []}
         services_links={footerContent.services_links || []}
+        social_links={footerContent.social_links || []} 
       />
     </main>
   );

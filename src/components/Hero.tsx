@@ -1,32 +1,64 @@
-"use client";
+// src/components/Hero.tsx
+'use client';
 
-import Link from 'next/link';
+import Slider from 'react-slick';
 import { motion } from 'framer-motion';
+import { Button } from 'react-bootstrap';
 
-interface HeroProps {
+interface Slide {
   title: string;
   subtitle: string;
   button_text: string;
   button_link: string;
+  image: string;
 }
 
-export default function Hero({ title, subtitle, button_text, button_link }: HeroProps) {
+interface HeroProps {
+  slides: Slide[];
+}
+
+export default function Hero({ slides }: HeroProps) {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+    autoplay: true,
+    autoplaySpeed: 5000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   return (
-    <motion.section
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      className="bg-dark text-white"
-    >
-      <div className="container text-center py-5">
-        <h1 className="display-4 fw-bold">{title}</h1>
-        <p className="lead mt-3">{subtitle}</p>
-        <div className="mt-4">
-          <Link href={button_link} className="btn btn-primary btn-lg">
-            {button_text}
-          </Link>
-        </div>
-      </div>
-    </motion.section>
+    <div className="hero-slider">
+      <Slider {...settings}>
+        {slides.map((slide, index) => (
+          <div key={index}>
+            <div
+              className="d-flex align-items-center justify-content-center text-center text-white"
+              style={{
+                backgroundImage: `url(${slide.image})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                height: '800px',
+              }}
+            >
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+              >
+                <h1 className="display-4 fw-bold">{slide.title}</h1>
+                <p className="lead fw-normal mb-4">{slide.subtitle}</p>
+                <Button variant="primary" href={slide.button_link} size="lg">
+                  {slide.button_text}
+                </Button>
+              </motion.div>
+            </div>
+          </div>
+        ))}
+      </Slider>
+    </div>
   );
 }
