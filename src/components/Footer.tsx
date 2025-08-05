@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 
 interface FooterProps {
   company_name: string;
@@ -29,7 +30,7 @@ export default function Footer({
   services_links,
   social_links,
 }: FooterProps) {
-  const socialIconMap: { [key: string]: any } = {
+  const socialIconMap: { [key: string]: IconDefinition } = {
     facebook: faFacebook,
     twitter: faTwitter,
     instagram: faInstagram,
