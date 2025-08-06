@@ -5,8 +5,17 @@ import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
 
+interface Slide {
+  title: string;
+  subtitle: string;
+  button_text: string;
+  button_link: string;
+  image: string;
+}
+
 interface Frontmatter {
   [key: string]: any; // Allow any other properties
+  slides?: Slide[];
   title?: string;
   subtitle?: string;
   button_text?: string;
@@ -19,10 +28,12 @@ interface Frontmatter {
   email_address?: string;
   location?: string;
   company_name?: string;
+  slogan?: string;
   copyright_year?: string;
   address?: string;
   links?: Array<{ text: string; href: string }>;
   services_links?: Array<{ text: string; href: string }>;
+  social_links?: Array<{ icon: string; href: string }>;
 }
 
 const contentDirectory = path.join(process.cwd(), 'content');
