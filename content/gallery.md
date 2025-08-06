@@ -1,6 +1,6 @@
 ---
 title: 'Our Gallery'
-subtitle: 'A glimpse into our professional services'
+subtitle: 'A Glimpse of Our Fleet and Professional Team in Action'
 gallery_images:
   - '/images/gallery/placeholder-1.jpg'
   - '/images/gallery/placeholder-2.jpg'

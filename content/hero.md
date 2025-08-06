@@ -1,13 +1,13 @@
 ---
 slides:
-  - title: 'Fast & Reliable Towing Services'
-    subtitle: '24/7 Emergency Roadside Assistance'
-    button_text: 'Call Now'
-    button_link: 'tel:214-625-5394'
+  - title: 'Fast and Reliable Towing Services in Florida'
+    subtitle: 'Available 24/7 for all your towing and roadside assistance needs.'
+    button_text: 'Call Us Now'
+    button_link: 'tel:305-555-1234'
     image: '/images/hero-slider-1.jpg'
-  - title: 'Expert Roadside Solutions'
-    subtitle: 'Jumpstarts, Lockouts, and More'
-    button_text: 'Our Services'
+  - title: 'Professional Heavy Duty Towing'
+    subtitle: 'Equipped to handle large vehicles, from semi-trucks to RVs.'
+    button_text: 'Learn More'
     button_link: '#services'
     image: '/images/hero-slider-2.jpg'
 ---
