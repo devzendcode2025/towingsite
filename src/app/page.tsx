@@ -34,6 +34,7 @@ export default async function Home() {
       <Gallery
         title={galleryContent.title || ''}
         subtitle={galleryContent.subtitle || ''}
+        images={galleryContent.gallery_images || []}
       />
       <WhyChooseUs
         title={whyChooseUsContent.title || ''}

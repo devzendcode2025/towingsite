@@ -18,6 +18,7 @@ interface Frontmatter {
   slides?: Slide[];
   title?: string;
   subtitle?: string;
+  gallery_images?: string[];
   button_text?: string;
   button_link?: string;
   phone_number?: string;
